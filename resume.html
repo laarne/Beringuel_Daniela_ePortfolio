@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniela D. Beringuel, EnP - Résumé</title>
+  <style>
+    @page { size: letter; margin: 0.5in 0.6in; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Garamond, "EB Garamond", Georgia, "Times New Roman", serif;
+      color: #000;
+      background: #ecebe6;
+      font-size: 10.5pt;
+      line-height: 1.28;
+    }
+    .page {
+      max-width: 8.5in;
+      margin: 16px auto;
+      background: #fff;
+      padding: 0.5in 0.6in;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+    @media print {
+      body { background: none; }
+      .page { margin: 0; padding: 0; box-shadow: none; max-width: none; }
+      .no-print { display: none !important; }
+    }
+
+    .toolbar {
+      max-width: 8.5in; margin: 16px auto 0;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      font-family: Arial, sans-serif; font-size: 13px;
+    }
+    .toolbar a, .toolbar button {
+      font: inherit; color: #1c1b17; background: none; border: 1.5px solid #1c1b17;
+      padding: 7px 14px; text-decoration: none; cursor: pointer;
+    }
+    .toolbar button { background: #1c1b17; color: #f2eee1; }
+    .toolbar a:hover { background: #1c1b17; color: #f2eee1; }
+
+    header { text-align: center; margin-bottom: 10px; }
+    h1 { font-size: 18pt; font-weight: 700; letter-spacing: 0.02em; }
+    .contact { font-size: 10pt; margin-top: 2px; }
+    .contact a { color: inherit; text-decoration: none; }
+
+    section { margin-top: 9px; }
+    h2 {
+      font-size: 10.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      border-bottom: 1px solid #000; padding-bottom: 1px; margin-bottom: 4px;
+    }
+    .row { display: flex; justify-content: space-between; gap: 16px; }
+    .row > span:last-child { white-space: nowrap; flex: none; }
+    .org { font-weight: 700; }
+    .role { font-style: italic; }
+    .entry + .entry { margin-top: 6px; }
+    ul { margin: 2px 0 0 18px; }
+    li { margin-bottom: 1px; }
+    p { margin: 0; }
+    .creds li { list-style: none; margin-left: -18px; display: flex; justify-content: space-between; gap: 16px; }
+    .creds .id { white-space: nowrap; }
+    .skills p { margin-bottom: 1px; }
+    .skills b { font-weight: 700; }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <a href="index.html">← Back to portfolio</a>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="page">
+    <header>
+      <h1>Daniela D. Beringuel, EnP</h1>
+      <p class="contact">Ampayon, Butuan City, Agusan del Norte &nbsp;|&nbsp; <a href="mailto:danieladasmarinasberinguel@gmail.com">danieladasmarinasberinguel@gmail.com</a> &nbsp;|&nbsp; laarne.github.io/Beringuel_Daniela_ePortfolio</p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Registered Environmental Planner and 2026 Environmental Science graduate of Caraga State University. Most of my project work is GIS-based: flood and slope hazard mapping, land suitability analysis, and the spatial inputs for Comprehensive Land Use Plans and Environmental Impact Statements. Seeking an Environmental Planner position.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="row"><span class="org">Caraga State University</span><span>Ampayon, Butuan City</span></div>
+        <div class="row"><span class="role">Bachelor of Science in Environmental Science</span><span>2026</span></div>
+        <ul>
+          <li>Relevant coursework: GIS in Environmental Planning; Environmental Impact Assessment; Watershed Ecology; Natural Resource Economics; Environmental Policy and Law (PD 1586, RA 10587, RA 9003, RA 9275).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="row"><span class="org">Regional Resource &amp; Geospatial Solutions Laboratory, Caraga State University</span><span>Butuan City</span></div>
+        <div class="row"><span class="role">Environmental Planning &amp; Spatial Analytics Specialist (Lead Practicum)</span><span>June 2026 – Present</span></div>
+        <ul>
+          <li>Built a flood-risk model in ArcGIS Pro for 12 sub-catchments of the Agusan River basin, combining 10-year flood recurrence, slope, and population density data.</li>
+          <li>Mapped 180 hectares of riverside retention zones used in the local zoning revision; the model projects a 32% drop in seasonal flood exposure.</li>
+          <li>Wrote the technical report and thematic maps, following DHSUD guidelines for disaster risk reduction and climate change adaptation.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="row"><span class="org">Environmental Systems &amp; Regulatory Compliance Consult</span><span>Caraga Region</span></div>
+        <div class="row"><span class="role">Environmental Impact Assessment Preparer &amp; Technical Researcher</span><span>March – August 2026</span></div>
+        <ul>
+          <li>Collected baseline data for industrial facility proposals under PD 1586: water quality, ambient noise, and a flora and fauna inventory.</li>
+          <li>Drafted the Environmental Management and Monitoring Plans, including closed-loop drainage and vegetated buffers; the project received DENR-EMB approval.</li>
+          <li>Organized public consultations with barangay councils, civic groups, and regulators; no formal objections were filed during public review.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="row"><span class="org">GrowMate Digital Agriculture &amp; Youth Agri-Business Initiative</span><span>Northern Mindanao</span></div>
+        <div class="row"><span class="role">Resource Analyst &amp; Sustainable Agriculture Consultant</span><span>January – June 2026</span></div>
+        <ul>
+          <li>Assessed land capability on 45 hectares of smallholder farms and recommended soil conservation measures that lowered fertilizer runoff risk by 24%.</li>
+          <li>Turned field survey data into crop-planning guides for the initiative's young farmers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Licenses &amp; Certifications</h2>
+      <ul class="creds">
+        <li><span><b>Registered Environmental Planner</b>, Professional Regulation Commission</span><span class="id">Reg. No. 0006842, valid to 2029</span></li>
+        <li><span><b>Certified GIS Professional</b>, Esri Academy</span><span class="id">ESRI-GIS-2026-89412, July 2026</span></li>
+        <li><span><b>Accredited EIA Preparer</b>, DENR Environmental Management Bureau</span><span class="id">EMB-EIA-2026-0819, valid to 2029</span></li>
+        <li><span><b>CLUP Formulation Training</b> (40 hours), DHSUD Region XIII</span><span class="id">R13-CLUP-0429, June 2026</span></li>
+        <li><span><b>Advanced Spatial Analysis</b> (40 lab hours), CSU Center for Resource Assessment, Analytics &amp; Geospatial Solutions</span><span class="id">CSU-GIS-TP-2026-0841, July 2026</span></li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <p><b>GIS:</b> ArcGIS Pro, QGIS, Spatial Analyst, hydrological modeling, multi-criteria evaluation, thematic mapping</p>
+      <p><b>Planning:</b> CLUP formulation, zoning ordinance drafting, DRR-CCA mainstreaming, land suitability classification</p>
+      <p><b>Fieldwork:</b> baseline environmental surveys, water sampling, flora and fauna inventories, public scoping</p>
+      <p><b>Laws:</b> RA 10587, PD 1586, RA 9275, RA 8749, RA 9003, RA 10173</p>
+    </section>
+  </main>
+
+</body>
+</html>

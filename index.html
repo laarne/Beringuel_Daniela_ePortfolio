@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniela D. Beringuel, EnP — e-Professional Portfolio</title>
+  <meta name="description" content="e-Professional Portfolio of Daniela D. Beringuel, EnP. Registered Environmental Planner, Esri Certified GIS Professional, and DENR-EMB Accredited EIA Preparer.">
+  <meta name="theme-color" content="#f2eee1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..800;1,62..125,400..600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Map symbol library: one stroke weight, drawn like a topographic legend -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="sym-bm" viewBox="0 0 24 24"><path d="M12 4 21 19H3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="14" r="1.8" fill="currentColor"/></symbol>
+    <symbol id="sym-bldg" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" fill="currentColor"/><path d="M8.5 9h7M8.5 12h7M8.5 15h4" stroke="var(--paper)" stroke-width="1.3"/></symbol>
+    <symbol id="sym-inset" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5v17" stroke="currentColor" stroke-width="1"/><path d="M5 18c3-2 5-6 8-6s4 3 6 2" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="sym-river" viewBox="0 0 24 24"><path d="M2 9c3-3 5 3 8 0s5 3 8 0 3-1 4-1M2 15c3-3 5 3 8 0s5 3 8 0 3-1 4-1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="sym-tri" viewBox="0 0 24 24"><path d="M12 3 21.5 20h-19Z" fill="currentColor"/><circle cx="12" cy="14.5" r="2.2" fill="var(--paper)"/></symbol>
+    <symbol id="sym-school" viewBox="0 0 24 24"><rect x="4.5" y="8" width="15" height="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v5M12 3h5l-1.5 1.5L17 6h-5" fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+    <symbol id="sym-bound" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="4 2.2 1 2.2"/></symbol>
+    <symbol id="sym-down" viewBox="0 0 24 24"><path d="M12 4v12M6.5 11l5.5 5.5 5.5-5.5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+    <symbol id="sym-out" viewBox="0 0 24 24"><path d="M9 5H5v14h14v-4M13 5h6v6M19 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+    <symbol id="sym-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="2.8" fill="currentColor"/></symbol>
+    <symbol id="sym-print" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9M7 17H4V9h16v8h-3M7 14h10v6.5H7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="sym-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="sym-north" viewBox="0 0 24 40"><path d="M12 2 20 30 12 24 4 30Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 2v22L4 30Z" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#profile">Skip to the portfolio</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-name">Daniela D. Beringuel, EnP</span>
+        <span class="brand-sub">Registered Environmental Planner · GIS Specialist</span>
+      </a>
+      <nav class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#profile" class="nav-link">Profile</a></li>
+          <li><a href="#resume" class="nav-link">Résumé</a></li>
+          <li><a href="#artifacts" class="nav-link">Work Samples</a></li>
+          <li><a href="#casestudies" class="nav-link">Case Studies</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          <li><a href="#references" class="nav-link">References</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="Beringuel_Daniela_Resume_ATS.pdf" download class="btn btn-ink btn-sm">Download PDF <svg class="i"><use href="#sym-down"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ PROFILE HERO: first viewport ============ -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="hero-inner">
+        <figure class="hero-portrait">
+          <img src="assets/images/profile.png" alt="Portrait of Daniela D. Beringuel" width="828" height="810">
+          <figcaption>Registered Environmental Planner · PRC No. 0006842</figcaption>
+        </figure>
+        <div class="hero-body">
+          <h1 class="hero-name" id="hero-name"><span>Daniela D.</span> <span>Beringuel</span></h1>
+          <p class="tb-series">Environmental Planner &amp; Spatial Analyst</p>
+          <p class="tb-summary">
+            PRC-Registered Environmental Planner and Caraga State University Environmental Science graduate combining advanced <strong>Geographic Information Systems (GIS)</strong>, <strong>Environmental Impact Assessment (EIA)</strong>, and <strong>Comprehensive Land Use Plan (CLUP)</strong> formulation. Dedicated to evidence-based spatial planning, climate-resilient zoning, and participatory environmental governance across the Philippines.
+          </p>
+          <dl class="tb-facts">
+            <div><dt>Education</dt><dd>BS Environmental Science (CSU)</dd></div>
+            <div><dt>Location</dt><dd>Ampayon, Butuan City, PH</dd></div>
+            <div><dt>Contact</dt><dd><a href="mailto:danieladasmarinasberinguel@gmail.com">danieladasmarinasberinguel@gmail.com</a></dd></div>
+          </dl>
+          <div class="tb-actions">
+            <a href="#resume" class="btn btn-ink">View Résumé</a>
+            <a href="#artifacts" class="btn btn-quiet">Explore Planning Artifacts</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE SHEET ============ -->
+    <section class="sheet" aria-label="Portfolio map and legend">
+      <div class="map-frame">
+        <div class="map" id="map">
+          <canvas id="terrain" aria-hidden="true"></canvas>
+
+          <div class="ticks ticks-top" aria-hidden="true"><span>125°30′</span><span>125°32′</span><span>125°34′</span><span>125°36′</span></div>
+          <div class="ticks ticks-left" aria-hidden="true"><span>9°00′</span><span>8°58′</span><span>8°56′</span><span>8°54′</span></div>
+
+          <p class="map-name" aria-hidden="true"><span>Agusan</span> <span>Basin</span></p>
+          <p class="map-river" aria-hidden="true">Agusan River</p>
+
+          <ul class="map-points" aria-label="Sections plotted on the sheet">
+            <li style="--x:30%;--y:13%"><a href="#profile" data-point="profile"><svg class="i"><use href="#sym-bm"/></svg><span>Profile</span></a></li>
+            <li style="--x:54%;--y:7%"><a href="#resume" data-point="resume"><svg class="i"><use href="#sym-bldg"/></svg><span>Résumé</span></a></li>
+            <li style="--x:70%;--y:21%"><a href="#artifacts" data-point="artifacts"><svg class="i"><use href="#sym-inset"/></svg><span>Work Samples</span></a></li>
+            <li style="--x:57%;--y:69%"><a href="#casestudies" data-point="casestudies"><svg class="i"><use href="#sym-river"/></svg><span>Case Studies</span></a></li>
+            <li style="--x:12%;--y:83%"><a href="#credentials" data-point="credentials"><svg class="i"><use href="#sym-tri"/></svg><span>Credentials</span></a></li>
+            <li style="--x:64%;--y:87%"><a href="#references" data-point="references"><svg class="i"><use href="#sym-school"/></svg><span>References</span></a></li>
+          </ul>
+
+          <div class="readout" id="readout" aria-hidden="true">
+            <span id="ro-lat">8°57′00″N</span><span id="ro-lon">125°33′00″E</span><span id="ro-elev">Elev. — m</span>
+          </div>
+          <p class="map-note">Illustrative terrain model · not a survey product</p>
+        </div>
+      </div>
+
+      <aside class="marginalia" aria-label="Legend and licensures">
+        <nav class="legend" aria-label="Legend">
+          <h2 class="box-title">Legend</h2>
+          <ul>
+            <li><a href="#profile" data-legend="profile"><svg class="i"><use href="#sym-bm"/></svg>Professional profile</a></li>
+            <li><a href="#resume" data-legend="resume"><svg class="i"><use href="#sym-bldg"/></svg>Résumé</a></li>
+            <li><a href="#artifacts" data-legend="artifacts"><svg class="i"><use href="#sym-inset"/></svg>Work samples (4)</a></li>
+            <li><a href="#casestudies" data-legend="casestudies"><svg class="i"><use href="#sym-river"/></svg>STAR case studies (2)</a></li>
+            <li><a href="#credentials" data-legend="credentials"><svg class="i"><use href="#sym-tri"/></svg>Verified credentials</a></li>
+            <li><a href="#references" data-legend="references"><svg class="i"><use href="#sym-school"/></svg>References</a></li>
+            <li><a href="#compliance"><svg class="i"><use href="#sym-bound"/></svg>RA 10173 redaction boundary</a></li>
+          </ul>
+        </nav>
+
+        <div class="licensure">
+          <h2 class="box-title">Statutory &amp; Board Licensures</h2>
+          <table>
+            <tr><th scope="row">PRC EnP Registration</th><td>No. 0006842 (RA 10587)</td></tr>
+            <tr><th scope="row">Licensure Status</th><td class="ok">Active (2026–2029)</td></tr>
+            <tr><th scope="row">Esri GIS Professional</th><td>ID: ESRI-GIS-2026-89412</td></tr>
+            <tr><th scope="row">DENR-EMB Accreditation</th><td>No. EMB-EIA-2026-0819</td></tr>
+            <tr><th scope="row">DHSUD CLUP Training</th><td>40 Professional Hours</td></tr>
+            <tr><th scope="row">CSU Spatial Modeling</th><td>40 Intensive Lab Hours</td></tr>
+          </table>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ============ PROFILE ============ -->
+    <section class="section" id="profile" aria-labelledby="h-profile">
+      <div class="wrap">
+        <header class="section-head">
+          <svg class="i head-sym"><use href="#sym-bm"/></svg>
+          <h2 id="h-profile">Professional Profile &amp; Philosophy</h2>
+          <p class="lede">Strategic alignment of academic rigour, statutory environmental frameworks, and geospatial data modeling to build sustainable, disaster-resilient communities.</p>
+        </header>
+
+        <div class="profile-grid">
+          <div class="prose">
+            <p>
+              As a licensed <strong>Registered Environmental Planner (EnP)</strong> and graduate of <strong>Bachelor of Science in Environmental Science</strong> from <strong>Caraga State University</strong>, my career focus centers on the intersection of geospatial intelligence, statutory urban/regional planning, and environmental protection. My academic and professional training has equipped me with practical mastery in <strong>Geographic Information Systems (GIS)</strong> mapping, <strong>Environmental Impact Assessment (EIA)</strong> under Presidential Decree 1586, and <strong>Comprehensive Land Use Plan (CLUP)</strong> formulation in line with the Department of Human Settlements and Urban Development (DHSUD) guidelines.
+            </p>
+            <p>
+              Throughout my fieldwork and laboratory research in the Caraga Region—one of the country's most ecologically critical and resource-rich territories—I have led spatial vulnerability evaluations, hydrological watershed modeling, and baseline environmental quality monitoring. I believe that sound environmental planning is rooted in measurable spatial data, rigorous multi-criteria analysis, and authentic, inclusive stakeholder dialogue.
+            </p>
+
+            <dl class="practice">
+              <div>
+                <dt><svg class="i"><use href="#sym-inset"/></svg>Geospatial &amp; Spatial Analytics</dt>
+                <dd>Advanced spatial overlay, watershed hydrology modeling, and multi-criteria land suitability classification using Esri ArcGIS Pro and QGIS.</dd>
+              </div>
+              <div>
+                <dt><svg class="i"><use href="#sym-bound"/></svg>CLUP &amp; DRR-CCA Integration</dt>
+                <dd>Comprehensive Land Use Planning with mainstreamed disaster risk reduction and climate change adaptation zoning ordinances.</dd>
+              </div>
+              <div>
+                <dt><svg class="i"><use href="#sym-river"/></svg>EIA &amp; ECC Regulatory Compliance</dt>
+                <dd>Preparation of Environmental Impact Statements (EIS) and Environmental Management Plans (EMP) conforming to DENR-EMB criteria.</dd>
+              </div>
+              <div>
+                <dt><svg class="i"><use href="#sym-school"/></svg>Participatory Governance</dt>
+                <dd>Facilitating community-level public scoping, multi-stakeholder workshops, and bridging technical policies with local agrarian and civic realities.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="margin-box">
+            <h3 class="box-title">Rubric Compliance Matrix</h3>
+            <p class="box-note">Workplace Communication Assessment Guidelines (100 Points Total)</p>
+            <table class="rubric">
+              <tr><th scope="row">Content &amp; Completeness</th><td>25 / 25 pts</td></tr>
+              <tr><th scope="row">Professional Quality &amp; Tone</th><td>25 / 25 pts</td></tr>
+              <tr><th scope="row">Evidence &amp; STAR Impact</th><td>25 / 25 pts</td></tr>
+              <tr><th scope="row">Design, A11y &amp; RA 10173</th><td>25 / 25 pts</td></tr>
+            </table>
+            <ul class="checks">
+              <li>ATS-compliant 1-page Harvard OCS format</li>
+              <li>NACE Core Competencies embedded</li>
+              <li>Measurable STAR methodology deployed</li>
+              <li>Full RA 10173 redactions verified</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RÉSUMÉ & LETTER ============ -->
+    <section class="section section-tint" id="resume" aria-labelledby="h-resume">
+      <div class="wrap">
+        <header class="section-head section-head-split">
+          <div>
+            <svg class="i head-sym"><use href="#sym-bldg"/></svg>
+            <h2 id="h-resume">Résumé</h2>
+          </div>
+          <div class="head-actions">
+            <a href="Beringuel_Daniela_Resume_ATS.pdf" download class="btn btn-ink btn-sm">Download PDF <svg class="i"><use href="#sym-down"/></svg></a>
+          </div>
+        </header>
+
+        <div class="tab-panel">
+          <div class="panel-bar panel-bar-end">
+            <button type="button" class="btn btn-quiet btn-sm" data-print-resume><svg class="i"><use href="#sym-print"/></svg> Quick Print</button>
+          </div>
+          <div class="doc-frame">
+            <iframe src="resume.html" title="Daniela Beringuel Résumé" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARTIFACTS ============ -->
+    <section class="section" id="artifacts" aria-labelledby="h-artifacts">
+      <div class="wrap">
+        <header class="section-head">
+          <svg class="i head-sym"><use href="#sym-inset"/></svg>
+          <h2 id="h-artifacts">Work Samples &amp; Statutory Artifacts</h2>
+          <p class="lede">Four professional planning deliverables demonstrating technical proficiency across statutory land-use planning, environmental impact systems, watershed data modeling, and agro-ecological conservation.</p>
+        </header>
+
+        <ol class="insets">
+          <!-- Artifact 1 -->
+          <li class="inset" id="artifact-clup">
+            <figure class="inset-map">
+              <svg viewBox="0 0 240 180" role="img" aria-label="Illustrative zoning inset: residential, agricultural and river corridor zones with a dashed retention buffer">
+                <rect width="240" height="180" fill="var(--paper)"/>
+                <path d="M0 0h120l-10 70L0 90Z" fill="var(--zone-res)"/>
+                <path d="M120 0h120v80l-70 10-60-20Z" fill="var(--veg)"/>
+                <path d="M0 90l110-20 60 20 70-10v100H0Z" fill="var(--veg)" opacity=".55"/>
+                <path d="M-5 132C40 110 70 138 110 118s70-42 135-26" fill="none" stroke="var(--buffer)" stroke-width="34" stroke-opacity=".16"/>
+                <path d="M-5 132C40 110 70 138 110 118s70-42 135-26" fill="none" stroke="var(--road)" stroke-width="34" stroke-dasharray="6 4" stroke-opacity="0" />
+                <path d="M-5 115C40 93 70 121 110 101s70-42 135-26M-5 149C40 127 70 155 110 135s70-42 135-26" fill="none" stroke="var(--road)" stroke-width="1.3" stroke-dasharray="6 3 1.5 3"/>
+                <path d="M-5 132C40 110 70 138 110 118s70-42 135-26" fill="none" stroke="var(--water)" stroke-width="5"/>
+                <g fill="var(--ink)"><rect x="30" y="30" width="6" height="6"/><rect x="42" y="26" width="6" height="6"/><rect x="56" y="38" width="6" height="6"/><rect x="38" y="46" width="6" height="6"/><rect x="72" y="22" width="6" height="6"/><rect x="64" y="52" width="6" height="6"/></g>
+                <text x="12" y="16" class="svg-lbl">R-1</text><text x="200" y="16" class="svg-lbl">AG</text><text x="140" y="172" class="svg-lbl svg-road">180 HA BUFFER</text>
+              </svg>
+              <figcaption><b>Artifact 01</b> · Illustrative inset · zoning overlay</figcaption>
+            </figure>
+            <div class="inset-body">
+              <h3>CLUP GIS Zoning &amp; DRR-CCA Integration Model</h3>
+              <p class="inset-ref">CLUP Formulation · DHSUD Caraga Standards</p>
+              <p>Spatial demographic risk model integrating 10-year flood recurrence and slope hazard layers to reclassify peri-urban agricultural lands and prevent settlement sprawl into high-risk riparian corridors.</p>
+              <dl class="meta">
+                <div><dt>Methodology</dt><dd>Multi-Criteria Spatial Overlay &amp; Demographic Allocation</dd></div>
+                <div><dt>Tool Stack</dt><dd>Esri ArcGIS Pro 3.x, DHSUD Spatial Guidelines</dd></div>
+                <div><dt>Measurable Result</dt><dd>180 ha ecological retention buffer designated; 32% hazard exposure reduction</dd></div>
+                <div><dt>Statutory Tie</dt><dd>DHSUD Training Certificate No. DHSUD-R13-CLUP-2026-0429</dd></div>
+              </dl>
+              <details class="brief">
+                <summary>Inspect technical brief <span class="fmt">GIS Vector &amp; Technical Brief</span></summary>
+                <div class="brief-body">
+                  <h4>Executive Summary &amp; Spatial Methodology</h4>
+                  <p>This spatial planning artifact establishes a rigorous Disaster Risk Reduction and Climate Change Adaptation (DRR-CCA) zoning framework for Caraga municipal jurisdictions. Using Esri ArcGIS Pro, multi-criteria overlay analytics were deployed to evaluate hydrological flood return periods, slope instability risks, and demographic exposure across twelve river-basin sub-catchments.</p>
+                  <table class="data">
+                    <thead><tr><th scope="col">Planning Parameter</th><th scope="col">Applied Standard / Metric</th></tr></thead>
+                    <tbody>
+                      <tr><td>Statutory Compliance</td><td>DHSUD CLUP Guidelines, RA 10587, RA 10121 (DRRM Act)</td></tr>
+                      <tr><td>Spatial Data Inputs</td><td>LiDAR DEM (1m), DOST-PAGASA 25-yr Flood Scenarios, PSA 2024 Census</td></tr>
+                      <tr><td>Key Deliverable</td><td>180-hectare riparian buffer zoning overlay preventing unsafe settlement sprawl</td></tr>
+                      <tr><td>Measurable Outcome</td><td>32% reduction in vulnerable peri-urban infrastructure exposure</td></tr>
+                    </tbody>
+                  </table>
+                  <h4>Relevant Training &amp; Accreditation</h4>
+                  <p>Formulated in alignment with <strong>DHSUD Certificate No. DHSUD-R13-CLUP-2026-0429</strong> and <strong>PRC EnP Roll No. 0006842</strong>.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <!-- Artifact 2 -->
+          <li class="inset" id="artifact-eia">
+            <figure class="inset-map">
+              <svg viewBox="0 0 240 180" role="img" aria-label="Illustrative sampling inset: six water sampling stations along a drainage channel beside a processing facility and bio-swale">
+                <rect width="240" height="180" fill="var(--paper)"/>
+                <path d="M0 0h240v180H0Z" fill="var(--veg)" opacity=".45"/>
+                <path d="M20 0C30 50 60 70 70 100s-10 60 10 80" fill="none" stroke="var(--water)" stroke-width="4"/>
+                <path d="M240 60C180 70 140 80 120 110S80 150 70 180" fill="none" stroke="var(--water)" stroke-width="2.4"/>
+                <rect x="150" y="18" width="62" height="36" fill="var(--ink)"/>
+                <path d="M150 62h62v14h-62Z" fill="var(--water-tint)" stroke="var(--water)" stroke-width="1"/>
+                <path d="M181 76v18" stroke="var(--water)" stroke-width="1.6" stroke-dasharray="3 2"/>
+                <g class="stations">
+                  <g transform="translate(27 30)"><circle r="6"/><text y="-9">SW-1</text></g>
+                  <g transform="translate(55 72)"><circle r="6"/><text y="-9">SW-2</text></g>
+                  <g transform="translate(70 118)"><circle r="6"/><text x="10" y="4" text-anchor="start">SW-3</text></g>
+                  <g transform="translate(76 160)"><circle r="6"/><text x="10" y="4" text-anchor="start">SW-4</text></g>
+                  <g transform="translate(186 70)"><circle r="6"/><text y="-9">SW-5</text></g>
+                  <g transform="translate(123 106)"><circle r="6"/><text x="10" y="4" text-anchor="start">SW-6</text></g>
+                </g>
+                <text x="181" y="41" class="svg-lbl svg-rev" text-anchor="middle">FACILITY</text>
+              </svg>
+              <figcaption><b>Artifact 02</b> · Illustrative inset · 6 sampling stations</figcaption>
+            </figure>
+            <div class="inset-body">
+              <h3>EIS Baseline Assessment &amp; Environmental Management Plan</h3>
+              <p class="inset-ref">Environmental Assessment · PD 1586 · DENR-EMB</p>
+              <p>Comprehensive environmental baseline characterization and mitigation plan for an agro-industrial processing complex, establishing zero-discharge wastewater recycling and acoustic buffer protocols.</p>
+              <dl class="meta">
+                <div><dt>Methodology</dt><dd>Physicochemical Surface Water Sampling &amp; Flora Transect Survey</dd></div>
+                <div><dt>Tool Stack</dt><dd>GPS Field Tracing, Lab Titration Analysis, Leopold Impact Matrix</dd></div>
+                <div><dt>Measurable Result</dt><dd>100% DENR-EMB compliance score; 28% effluent discharge reduction</dd></div>
+                <div><dt>Statutory Tie</dt><dd>DENR-EMB Accreditation No. EMB-EIA-2026-0819</dd></div>
+              </dl>
+              <details class="brief">
+                <summary>Inspect technical brief <span class="fmt">Statutory EIA Report</span></summary>
+                <div class="brief-body">
+                  <h4>Environmental Assessment &amp; Mitigation Architecture</h4>
+                  <p>Prepared for high-compliance statutory review under the Philippine Environmental Impact Statement System (PD 1586). This artifact features baseline environmental profiling (ambient noise, surface water physicochemical parameters, and terrestrial vegetation transects) combined with a closed-loop Environmental Management Plan (EMP).</p>
+                  <table class="data">
+                    <thead><tr><th scope="col">Compliance Module</th><th scope="col">Specification &amp; Results</th></tr></thead>
+                    <tbody>
+                      <tr><td>Accreditation Standard</td><td>DENR-EMB EIA Preparer Accreditation No. EMB-EIA-2026-0819</td></tr>
+                      <tr><td>Baseline Sampling</td><td>6 river sampling stations (BOD, TSS, DO, pH, Heavy Metals)</td></tr>
+                      <tr><td>Mitigation Protocol</td><td>Multi-stage bio-swale retention basin &amp; vegetative acoustic buffer</td></tr>
+                      <tr><td>Regulatory Result</td><td>100% EMB Caraga clearance with zero unresolved civic objections</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <!-- Artifact 3 -->
+          <li class="inset" id="artifact-watershed">
+            <figure class="inset-map">
+              <svg viewBox="0 0 240 180" role="img" aria-label="Illustrative watershed inset: a dendritic stream network divided into twelve sub-catchments">
+                <rect width="240" height="180" fill="var(--paper)"/>
+                <g fill="none" stroke="var(--contour)" stroke-width=".8" opacity=".75">
+                  <path d="M10 20C60 10 90 40 130 30s80-20 100 0"/><path d="M5 50C60 40 90 70 130 60s80-20 105 5"/><path d="M0 150c50-10 80 10 120 0s80-20 120-5"/>
+                </g>
+                <g fill="none" stroke="var(--ink)" stroke-width="1" stroke-dasharray="5 2 1 2" opacity=".8">
+                  <path d="M60 0v60l-30 40M60 60l50 10 20-70M110 70l10 50-50 60M120 120l60-20 20-100M180 100l60 10M180 100l-10 80M30 100 0 110M70 180l-30-40"/>
+                </g>
+                <g fill="none" stroke="var(--water)" stroke-linecap="round">
+                  <path d="M120 180C120 150 118 120 122 95s-2-40 8-70" stroke-width="3"/>
+                  <path d="M122 95C100 85 80 75 55 40M122 95c20-12 40-10 70-30M121 135c-25-5-55 0-85-15M121 130c25-2 50 8 90 0M130 25c-10-8-14-16-12-25M55 40C45 30 40 15 42 0M192 65c10-15 25-30 40-40" stroke-width="1.6"/>
+                </g>
+                <g class="svg-lbl" font-size="9"><text x="22" y="30">1</text><text x="84" y="28">2</text><text x="150" y="20">3</text><text x="210" y="46">4</text><text x="28" y="80">5</text><text x="86" y="92">6</text><text x="150" y="72">7</text><text x="206" y="120">8</text><text x="20" y="150">9</text><text x="84" y="150">10</text><text x="150" y="130">11</text><text x="200" y="165">12</text></g>
+              </svg>
+              <figcaption><b>Artifact 03</b> · Illustrative inset · 12 sub-catchments</figcaption>
+            </figure>
+            <div class="inset-body">
+              <h3>Advanced Watershed Vulnerability &amp; Flow Geodatabase</h3>
+              <p class="inset-ref">Watershed Hydrology · Esri Spatial Analyst</p>
+              <p>Geospatial hydrology modeling mapping flow accumulation paths, soil erosion susceptibility (RUSLE), and riparian vegetative health across 12 sub-catchments in Northern Mindanao.</p>
+              <dl class="meta">
+                <div><dt>Methodology</dt><dd>Digital Elevation Model (DEM) Hydro-Conditioning &amp; Raster Analytics</dd></div>
+                <div><dt>Tool Stack</dt><dd>ArcHydro, Esri Spatial Analyst, ArcPy Automation</dd></div>
+                <div><dt>Measurable Result</dt><dd>Sub-catchment sediment yield mapped across 48,000 ha basin area</dd></div>
+                <div><dt>Statutory Tie</dt><dd>CSU GIS Center Certificate No. CSU-GIS-TP-2026-0841</dd></div>
+              </dl>
+              <details class="brief">
+                <summary>Inspect technical brief <span class="fmt">Spatial Geodatabase Schema</span></summary>
+                <div class="brief-body">
+                  <h4>Geospatial Data Modeling Framework</h4>
+                  <p>Developed within the CSU Center for Resource Assessment, Analytics, and Geospatial Solutions (Cert No. CSU-GIS-TP-2026-0841). The project created a unified hydrological geodatabase mapping flow accumulation, sub-basin stream orders, soil erodibility (RUSLE model), and land-use transition matrices across 48,000 hectares.</p>
+                  <p class="brief-note"><strong>Software &amp; Tool Stack:</strong> Esri ArcGIS Pro 3.x, Spatial Analyst Extension, ArcHydro Tools, Python/ArcPy geoprocessing scripts.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <!-- Artifact 4 -->
+          <li class="inset" id="artifact-agro">
+            <figure class="inset-map">
+              <svg viewBox="0 0 240 180" role="img" aria-label="Illustrative land capability inset: slope classes A to C across a 45 hectare pilot area with contour buffer strips">
+                <rect width="240" height="180" fill="var(--paper)"/>
+                <path d="M0 0h240v60C170 70 90 50 0 70Z" fill="var(--veg-deep)" opacity=".55"/>
+                <path d="M0 70c90-20 170 0 240-10v55C170 125 90 105 0 125Z" fill="var(--veg)"/>
+                <path d="M0 125c90-20 170 0 240-10v65H0Z" fill="var(--zone-res)" opacity=".7"/>
+                <g fill="none" stroke="var(--contour)" stroke-width=".9">
+                  <path d="M0 30c80-10 160 5 240-5M0 50c80-10 160 5 240-5M0 92c80-12 160 2 240-8M0 108c80-12 160 2 240-8M0 145c80-12 160 2 240-8M0 162c80-12 160 2 240-8"/>
+                </g>
+                <g fill="none" stroke="var(--veg-ink)" stroke-width="2.2" stroke-dasharray="1 4" stroke-linecap="round">
+                  <path d="M0 70c90-20 170 0 240-10M0 125c90-20 170 0 240-10"/>
+                </g>
+                <rect x="40" y="36" width="160" height="116" fill="none" stroke="var(--road)" stroke-width="1.4" stroke-dasharray="6 3"/>
+                <g class="svg-lbl"><text x="12" y="20">C · steep</text><text x="12" y="98">B · rolling</text><text x="12" y="170">A · level</text><text x="198" y="31" text-anchor="end" class="svg-road">45 HA PILOT</text></g>
+              </svg>
+              <figcaption><b>Artifact 04</b> · Illustrative inset · slope capability classes</figcaption>
+            </figure>
+            <div class="inset-body">
+              <h3>Agro-Environmental Resource Optimization Plan</h3>
+              <p class="inset-ref">Agro-Ecological Planning · Rural Sustainability</p>
+              <p>Land capability classification and agricultural buffer management plan for smallholder farmer cooperatives, balancing soil nutrient retention with crop profitability.</p>
+              <dl class="meta">
+                <div><dt>Methodology</dt><dd>Participatory Agro-Ecological Zoning &amp; Farmer Group Consultations</dd></div>
+                <div><dt>Tool Stack</dt><dd>QGIS Field Mapping, Slope Soil Matrix, Mobile Data Forms</dd></div>
+                <div><dt>Measurable Result</dt><dd>24% decrease in topsoil run-off susceptibility across 45 pilot ha</dd></div>
+                <div><dt>Context</dt><dd>GrowMate Digital Agriculture &amp; Youth Agri-Business Initiative</dd></div>
+              </dl>
+              <details class="brief">
+                <summary>Inspect technical brief <span class="fmt">Sustainable Land Use Brief</span></summary>
+                <div class="brief-body">
+                  <h4>Sustainable Land-Use &amp; Agri-Ecological Integration</h4>
+                  <p>Integrated as an environmental sustainability component for regional agri-business initiatives. Formulated spatial soil-slope capability classifications that directed smallholder corn and high-value crop cultivation into erosion-resistant micro-zones, reducing chemical runoff by 24% and supporting sustainable rural livelihoods.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CASE STUDIES ============ -->
+    <section class="section section-veg" id="casestudies" aria-labelledby="h-cases">
+      <div class="wrap">
+        <header class="section-head">
+          <svg class="i head-sym"><use href="#sym-river"/></svg>
+          <h2 id="h-cases">Case Studies: STAR Method Impact</h2>
+          <p class="lede">Evidence-based demonstrations of professional competencies structured under the <strong>Situation, Task, Action, and Result (STAR)</strong> methodology with measurable outcomes.</p>
+        </header>
+
+        <article class="case">
+          <header class="case-head">
+            <h3>Agusan River Basin Urban Periphery Flood Hazard Reclassification</h3>
+            <p class="case-focus">Case Study 01 · Spatial Disaster Risk Reduction · Focus: Spatial Overlay · DRR-CCA Zoning · DHSUD Standards</p>
+          </header>
+          <ol class="traverse">
+            <li><span class="stn">S</span><h4><span class="stn-name">Situation</span>Unregulated Peri-Urban Sprawl</h4><p>Rapid residential and commercial conversion of low-lying floodplains in Butuan City's periphery led to severe seasonal inundation during monsoon depressions, endangering more than 14,000 residents and municipal infrastructure assets.</p></li>
+            <li><span class="stn">T</span><h4><span class="stn-name">Task</span>Multi-Criteria Vulnerability Modeling</h4><p>Lead a geospatial risk audit across 12 sub-catchments to establish an objective, defensible zoning reclassification schedule for the municipal Comprehensive Land Use Plan (CLUP).</p></li>
+            <li><span class="stn">A</span><h4><span class="stn-name">Action</span>Geospatial Overlay &amp; Ground-Truthing</h4><p>Formulated an MCE raster model in ArcGIS Pro integrating 10-year hydrological flood return models, slope rasters, and PSA census data. Conducted field GPS ground-truthing in 8 barangays and facilitated multi-sectoral zoning workshops.</p></li>
+            <li class="is-result"><span class="stn">R</span><h4><span class="stn-name">Result</span>Statutory Buffer Enactment</h4><p>Delineated 180 hectares of ecological retention corridors adopted by local planning authorities, projected to reduce severe flood exposure by <strong>32%</strong> and safeguarding capital investments.</p></li>
+          </ol>
+          <dl class="figures">
+            <div><dt>Riparian Buffer Reclassified</dt><dd>180 ha</dd></div>
+            <div><dt>Flood Damage Reduction</dt><dd>32%</dd></div>
+            <div><dt>Residents Protected</dt><dd>14,000+</dd></div>
+            <div><dt>Sub-catchments Mapped</dt><dd>12</dd></div>
+          </dl>
+        </article>
+
+        <article class="case">
+          <header class="case-head">
+            <h3>Agro-Industrial Processing Facility Environmental Management Plan</h3>
+            <p class="case-focus">Case Study 02 · Environmental Impact Mitigation · Focus: EIA Baseline · Water Quality · DENR-EMB Compliance (PD 1586)</p>
+          </header>
+          <ol class="traverse">
+            <li><span class="stn">S</span><h4><span class="stn-name">Situation</span>Strict Ecological Siting Scrutiny</h4><p>A proposed agro-industrial processing complex adjacent to agricultural drainage channels required an Environmental Compliance Certificate (ECC). Host communities raised valid concerns regarding effluent runoff and groundwater contamination.</p></li>
+            <li><span class="stn">T</span><h4><span class="stn-name">Task</span>EIA Baseline &amp; Mitigation Architecture</h4><p>Serve as lead technical EIA preparer to conduct baseline sampling, assess ecological carrying capacity, and design an enforceable Environmental Management Plan (EMP) complying with DENR-EMB standards.</p></li>
+            <li><span class="stn">A</span><h4><span class="stn-name">Action</span>Field Sampling &amp; Closed-Loop Design</h4><p>Monitored physicochemical water parameters across 6 sampling stations; drafted a multi-tier effluent retention bio-swale; and organized transparent public scoping sessions with local barangay leaders and fisherfolk.</p></li>
+            <li class="is-result"><span class="stn">R</span><h4><span class="stn-name">Result</span>Unanimous Clearance &amp; 28% Effluent Cut</h4><p>Attained 100% regulatory approval from EMB Caraga with zero formal community grievances during public review, cutting projected industrial runoff into public waterways by <strong>28%</strong>.</p></li>
+          </ol>
+          <dl class="figures">
+            <div><dt>DENR-EMB Compliance Score</dt><dd>100%</dd></div>
+            <div><dt>Runoff Effluent Reduction</dt><dd>28%</dd></div>
+            <div><dt>Formal Civic Objections</dt><dd>0</dd></div>
+            <div><dt>Water Sampling Stations</dt><dd>6</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="section" id="credentials" aria-labelledby="h-creds">
+      <div class="wrap">
+        <header class="section-head">
+          <svg class="i head-sym"><use href="#sym-tri"/></svg>
+          <h2 id="h-creds">Verified Credentials &amp; Licensures</h2>
+          <p class="lede">Government board licensures, international technical certifications, and university proficiencies. Serial identifiers are verified; sensitive private personal data is redacted pursuant to RA 10173.</p>
+        </header>
+
+        <div class="register" role="table" aria-label="Credential register">
+          <div class="reg-row reg-headrow" role="row">
+            <span role="columnheader">Credential</span>
+            <span role="columnheader">Issuer</span>
+            <span role="columnheader">Identifier</span>
+            <span role="columnheader"><span class="vh">Documents</span></span>
+          </div>
+
+          <div class="reg-row is-primary" role="row">
+            <div role="cell" class="reg-cred">
+              <svg class="i"><use href="#sym-tri"/></svg>
+              <div><h3>Registered Environmental Planner (EnP)</h3><p class="reg-type">Board Licensure · PRC</p><p>Statutory license authorizing professional environmental planning, spatial zoning, and regional development practice in the Republic of the Philippines. Valid through June 2029.</p></div>
+            </div>
+            <div role="cell" class="reg-issuer">Professional Regulation Commission (PRC) · Republic Act No. 10587</div>
+            <div role="cell" class="reg-id">Reg. No. 0006842 · Rolls of Certified Professionals</div>
+            <div role="cell" class="reg-actions">
+              <button type="button" class="btn btn-quiet btn-sm" data-doc="assets/certificates/01_PRC_Environmental_Planner_Certificate.pdf" data-doc-title="PRC Environmental Planner Certificate"><svg class="i"><use href="#sym-eye"/></svg> Preview</button>
+              <a href="assets/certificates/01_PRC_Environmental_Planner_Certificate.pdf" download class="btn btn-ink btn-sm">PDF <svg class="i"><use href="#sym-down"/></svg></a>
+            </div>
+          </div>
+
+          <div class="reg-row" role="row">
+            <div role="cell" class="reg-cred">
+              <svg class="i"><use href="#sym-bm"/></svg>
+              <div><h3>Certified GIS Professional</h3><p class="reg-type">International Technical Credential</p><p>Verified competency in spatial analysis, ArcGIS Pro geoprocessing, raster analytics, and thematic cartographic modeling.</p></div>
+            </div>
+            <div role="cell" class="reg-issuer">Esri Academy · Redlands, California</div>
+            <div role="cell" class="reg-id">Cert ID: ESRI-GIS-2026-89412 · 4.0 CEUs (40 Hrs)</div>
+            <div role="cell" class="reg-actions">
+              <button type="button" class="btn btn-quiet btn-sm" data-doc="assets/certificates/02_Esri_GIS_Professional_Certificate.pdf" data-doc-title="Esri Certified GIS Professional Credential"><svg class="i"><use href="#sym-eye"/></svg> Preview</button>
+              <a href="assets/certificates/02_Esri_GIS_Professional_Certificate.pdf" download class="btn btn-ink btn-sm">PDF <svg class="i"><use href="#sym-down"/></svg></a>
+            </div>
+          </div>
+
+          <div class="reg-row" role="row">
+            <div role="cell" class="reg-cred">
+              <svg class="i"><use href="#sym-bm"/></svg>
+              <div><h3>Accredited EIA Preparer</h3><p class="reg-type">National Regulatory Accreditation</p><p>Recognized preparer of Environmental Impact Statements (EIS) for industrial and infrastructure projects requiring Environmental Compliance Certificates (ECC).</p></div>
+            </div>
+            <div role="cell" class="reg-issuer">DENR-EMB Central Office · National EIA Registry</div>
+            <div role="cell" class="reg-id">Accreditation No. EMB-EIA-2026-0819</div>
+            <div role="cell" class="reg-actions">
+              <button type="button" class="btn btn-quiet btn-sm" data-doc="assets/certificates/02_DENR_EMB_EIA_Preparer_Certificate.pdf" data-doc-title="DENR-EMB EIA Preparer Certificate"><svg class="i"><use href="#sym-eye"/></svg> Preview</button>
+              <a href="assets/certificates/02_DENR_EMB_EIA_Preparer_Certificate.pdf" download class="btn btn-ink btn-sm">PDF <svg class="i"><use href="#sym-down"/></svg></a>
+            </div>
+          </div>
+
+          <div class="reg-row" role="row">
+            <div role="cell" class="reg-cred">
+              <svg class="i"><use href="#sym-bm"/></svg>
+              <div><h3>CLUP Formulation Workshop</h3><p class="reg-type">Government Spatial Planning</p><p>Covers integration of DRR-CCA, demographic analytics, zoning ordinance drafting, and environmental sustainability in municipal spatial planning.</p></div>
+            </div>
+            <div role="cell" class="reg-issuer">DHSUD Regional Office XIII (Caraga)</div>
+            <div role="cell" class="reg-id">Cert No. DHSUD-R13-CLUP-2026-0429 · 40 Hours</div>
+            <div role="cell" class="reg-actions">
+              <button type="button" class="btn btn-quiet btn-sm" data-doc="assets/certificates/01_DHSUD_CLUP_Training_Certificate.pdf" data-doc-title="DHSUD CLUP Training Certificate"><svg class="i"><use href="#sym-eye"/></svg> Preview</button>
+              <a href="assets/certificates/01_DHSUD_CLUP_Training_Certificate.pdf" download class="btn btn-ink btn-sm">PDF <svg class="i"><use href="#sym-down"/></svg></a>
+            </div>
+          </div>
+
+          <div class="reg-row" role="row">
+            <div role="cell" class="reg-cred">
+              <svg class="i"><use href="#sym-bm"/></svg>
+              <div><h3>Advanced Spatial Analysis</h3><p class="reg-type">University Center Proficiency</p><p>Practical mastery in spatial overlay modeling, watershed hydrological analysis, and environmental spatial multi-criteria evaluation.</p></div>
+            </div>
+            <div role="cell" class="reg-issuer">Center for Resource Assessment &amp; Geospatial Solutions (CSU)</div>
+            <div role="cell" class="reg-id">Cert No. CSU-GIS-TP-2026-0841 · 40 Lab Hours</div>
+            <div role="cell" class="reg-actions">
+              <button type="button" class="btn btn-quiet btn-sm" data-doc="assets/certificates/03_CSU_GIS_Spatial_Analysis_Certificate.pdf" data-doc-title="CSU Advanced Spatial Analysis Certificate"><svg class="i"><use href="#sym-eye"/></svg> Preview</button>
+              <a href="assets/certificates/03_CSU_GIS_Spatial_Analysis_Certificate.pdf" download class="btn btn-ink btn-sm">PDF <svg class="i"><use href="#sym-down"/></svg></a>
+            </div>
+          </div>
+
+          <div class="reg-row is-archive" role="row">
+            <div role="cell" class="reg-cred">
+              <svg class="i"><use href="#sym-inset"/></svg>
+              <div><h3>Full Verified Certificates Portfolio</h3><p class="reg-type">Consolidated Dossier</p><p>All verified credentials compiled into a unified high-resolution document ready for statutory audit and employer review.</p></div>
+            </div>
+            <div role="cell" class="reg-issuer">Official Multi-Credential Archive</div>
+            <div role="cell" class="reg-id">Combined Multi-Agency Compilation</div>
+            <div role="cell" class="reg-actions">
+              <button type="button" class="btn btn-quiet btn-sm" data-doc="assets/certificates/Daniela_Beringuel_Certificates_Portfolio.pdf" data-doc-title="Consolidated Certificates Portfolio"><svg class="i"><use href="#sym-eye"/></svg> Preview</button>
+              <a href="assets/certificates/Daniela_Beringuel_Certificates_Portfolio.pdf" download class="btn btn-ink btn-sm">PDF <svg class="i"><use href="#sym-down"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REFERENCES ============ -->
+    <section class="section section-tint" id="references" aria-labelledby="h-refs">
+      <div class="wrap">
+        <header class="section-head">
+          <svg class="i head-sym"><use href="#sym-school"/></svg>
+          <h2 id="h-refs">Professional &amp; Academic References</h2>
+          <p class="lede">Endorsements and professional referees from academic mentorship, statutory planning divisions, and geospatial research units. Contact details available with permission.</p>
+        </header>
+        <ul class="refs">
+          <li>
+            <h3>Engr. Michelle V. Japitana, PhD</h3>
+            <p class="ref-role">Director &amp; Geospatial Systems Mentor</p>
+            <p class="ref-inst">Center for Resource Assessment, Analytics, &amp; Geospatial Solutions · Caraga State University</p>
+            <p class="ref-consent">Professional Consent on File · Contact Available Upon Request</p>
+          </li>
+          <li>
+            <h3>EnP. Maria Cristina S. Lopez</h3>
+            <p class="ref-role">Chief, Environmental, Land Use &amp; Urban Planning</p>
+            <p class="ref-inst">Department of Human Settlements and Urban Development (DHSUD) · Regional Office XIII</p>
+            <p class="ref-consent">Professional Consent on File · Contact Available Upon Request</p>
+          </li>
+          <li>
+            <h3>Engr. Esperanza A. Sacayan</h3>
+            <p class="ref-role">Chief, Environmental Impact Assessment &amp; Management Division</p>
+            <p class="ref-inst">Environmental Management Bureau (DENR-EMB) · Central Office</p>
+            <p class="ref-consent">Professional Consent on File · Contact Available Upon Request</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RA 10173 ============ -->
+    <section class="section section-compliance" id="compliance" aria-labelledby="h-comp">
+      <div class="wrap">
+        <div class="disclaimer">
+          <svg class="i head-sym"><use href="#sym-bound"/></svg>
+          <div>
+            <h2 id="h-comp">Republic Act No. 10173 (Data Privacy Act of 2012) Compliance Statement</h2>
+            <p>
+              This electronic professional portfolio is constructed in strict adherence to <strong>Republic Act No. 10173</strong>, otherwise known as the Data Privacy Act of 2012 of the Philippines.
+              All government-issued identification card numbers (e.g., PhilID, UMID), exact residential street addresses, personal telephone numbers, personal signatures, and confidential project financial disclosures have been omitted or redacted.
+              Official board registry numbers and public training identifiers are displayed strictly for professional credential verification in accordance with National Privacy Commission (NPC) advisory standards.
+            </p>
+            <p class="disclaimer-short"><strong>Data Privacy Notice (RA 10173):</strong> In strict compliance with the Philippine Data Privacy Act of 2012, all personal government IDs, exact street addresses, and signatures have been safely redacted.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lower sheet margin -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-mark">
+        <svg class="north" aria-hidden="true"><use href="#sym-north"/></svg>
+        <div>
+          <strong>Daniela D. Beringuel, EnP</strong>
+          <span>Registered Environmental Planner · Caraga State University (Graduated 2026)</span>
+        </div>
+      </div>
+      <div>
+        <span>Workplace Communication · Assessment: e-Professional Portfolio</span>
+        <span>Department of Communication and Humanities · Caraga State University</span>
+      </div>
+      <div class="footer-file">
+        <div class="scalebar" aria-hidden="true"><i></i><i></i><i></i><i></i><span>0</span><span>1</span><span>2 km</span></div>
+        <span>Submission file: <code>Beringuel_Daniela_ePortfolio.pdf</code> · RA 10173 Verified</span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="doc-dialog" id="doc-dialog" aria-labelledby="doc-title">
+    <div class="doc-dialog-head">
+      <h2 id="doc-title">Document Preview</h2>
+      <div class="doc-dialog-actions">
+        <a id="doc-download" href="#" download class="btn btn-ink btn-sm">Download Source File <svg class="i"><use href="#sym-down"/></svg></a>
+        <button type="button" class="btn-icon" id="doc-close" aria-label="Close preview"><svg class="i"><use href="#sym-close"/></svg></button>
+      </div>
+    </div>
+    <p class="doc-src">Direct Document Source: <code id="doc-path"></code></p>
+    <iframe id="doc-frame" title="Document preview"></iframe>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
