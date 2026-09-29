@@ -61,7 +61,23 @@
     .creds .id { white-space: nowrap; }
     .skills p { margin-bottom: 1px; }
     .skills b { font-weight: 700; }
+
+    /* Embedded in the portfolio page: the page supplies its own print and back controls */
+    .embedded .toolbar { display: none; }
+    .embedded body { background: #fff; }
+    .embedded .page { margin: 0; box-shadow: none; }
+
+    @media screen and (max-width: 640px) {
+      body { font-size: 10pt; }
+      .page { margin: 0; padding: 20px 16px; box-shadow: none; }
+      .toolbar { margin: 0; padding: 12px 16px 0; }
+      h1 { font-size: 16pt; }
+      .row { flex-wrap: wrap; gap: 0 12px; }
+      .creds li { flex-wrap: wrap; gap: 0 12px; }
+      .creds .id { white-space: normal; }
+    }
   </style>
+  <script>if (window.self !== window.top) document.documentElement.classList.add("embedded");</script>
 </head>
 <body>
 
