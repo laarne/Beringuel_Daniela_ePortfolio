@@ -349,7 +349,7 @@ table { border-collapse: collapse; width: 100%; }
 .head-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 
 /* ---------- Profile ---------- */
-.profile-grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: clamp(40px, 6vw, 88px); align-items: start; }
+.profile-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(40px, 6vw, 88px); align-items: start; }
 .prose p { max-width: 68ch; font-size: 1.06rem; line-height: 1.68; margin-bottom: 1.1em; text-wrap: pretty; }
 .practice { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 40px; margin-top: 44px; }
 .practice div { border-top: 1.5px solid var(--ink); padding-top: 14px; }
@@ -360,18 +360,6 @@ table { border-collapse: collapse; width: 100%; }
 .practice dt .i { color: var(--contour-index); }
 .practice dd { font-size: 0.92rem; line-height: 1.55; color: var(--ink-2); }
 
-.margin-box { border: 1.5px solid var(--ink); background: var(--paper-hi); padding: 22px; position: sticky; top: calc(var(--header-h) + 24px); }
-.box-note { font-size: 0.78rem; color: var(--muted); margin: -4px 0 12px; }
-.rubric { font-size: 0.84rem; }
-.rubric th { text-align: left; font-weight: 500; color: var(--ink-2); padding: 8px 8px 8px 0; }
-.rubric td { text-align: right; font-weight: 700; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
-.rubric tr { border-bottom: 1px dotted var(--hair); }
-.checks { list-style: none; margin-top: 14px; font-size: 0.8rem; color: var(--ink-2); display: grid; gap: 6px; }
-.checks li { position: relative; padding-left: 20px; line-height: 1.45; }
-.checks li::before {
-  content: ""; position: absolute; left: 2px; top: 0.3em;
-  width: 5px; height: 9px; border: solid var(--veg-ink); border-width: 0 2px 2px 0; transform: rotate(40deg);
-}
 
 /* ---------- Résumé ---------- */
 .tab-panel { border: 1.5px solid var(--ink); background: var(--paper); padding: clamp(14px, 2.4vw, 28px); }
@@ -618,7 +606,6 @@ table { border-collapse: collapse; width: 100%; }
 
 @media (max-width: 960px) {
   .profile-grid { grid-template-columns: 1fr; }
-  .margin-box { position: static; }
   .inset { grid-template-columns: 1fr; }
   .inset-map { max-width: 520px; }
   .traverse { grid-template-columns: 1fr 1fr; row-gap: 36px; }
